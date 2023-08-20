@@ -1,0 +1,99 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #333;
+    flex-wrap: wrap;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+}
+
+@keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.title {
+    color: #fff;
+    margin: 0 20px; /* aggiunta per dare spazio quando avvolgiamo */
+}
+
+.navbar {
+    display: flex;
+}
+
+.navList {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navItem {
+    margin: 0 15px;
+}
+
+.navItem a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.navItem a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Per i tablet */
+@media (max-width: 768px) {
+    .header {
+        padding: 20px;
+    }
+
+    .navList {
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px; /* Distanza dalla parte superiore per separare dalla title */
+    }
+
+    .navItem {
+        margin: 0 10px; /* Riduzione margin per device più piccoli */
+    }
+}
+
+/* Per i cellulari */
+@media (max-width: 480px) {
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .title {
+        font-size: 20px; /* Riduzione della dimensione del font */
+    }
+
+    .navItem {
+        margin: 0 5px; /* Riduzione margin ancora di più */
+    }
+}

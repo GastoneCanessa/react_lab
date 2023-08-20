@@ -1,0 +1,35 @@
+/* Stili di base per il banner */
+.banner {
+    padding: 16px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 16px 0; /* Margini superiori e inferiori per separarlo dagli altri elementi */
+    max-width: 100%; /* Assicuriamoci che il banner non superi la larghezza del suo contenitore */
+    overflow: hidden; /* Per evitare che eventuali contenuti interni sfuggano al banner */
+  }
+  
+  /* Regole responsive */
+  
+  /* Se lo schermo è piccolo (ad esempio, smartphone) */
+  @media (max-width: 600px) {
+    .banner {
+      font-size: 14px; /* Riduci la dimensione del font */
+      padding: 12px; /* Riduci il padding */
+    }
+  }
+  
+  /* Se lo schermo è medio (ad esempio, tablet) */
+  @media (min-width: 601px) and (max-width: 900px) {
+    .banner {
+      font-size: 15px; /* Dimensione del font intermedia */
+      padding: 14px; /* Padding intermedio */
+    }
+  }
+  
+  /* Il banner manterrà le dimensioni originali del font e del padding per schermi superiori a 900px (desktop) */
+  
+  
